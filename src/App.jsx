@@ -4,6 +4,10 @@ import Header from "./header";
 import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
+import CustomDesign from "./services/CustomDesign";
+import RapidPrototyping from "./services/RapidPrototyping";
+import ProductionPrinting from "./services/ProductionPrinting";
+import ConsultationServices from "./services/ConsultationServices";
 
 function App() {
   return (
@@ -16,6 +20,10 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/services/custom-design" element={<CustomDesign />} />
+            <Route path="/services/rapid-prototyping" element={<RapidPrototyping />} />
+            <Route path="/services/production-printing" element={<ProductionPrinting />} />
+            <Route path="/services/consultation" element={<ConsultationServices />} />
           </Routes>
         </main>
 

@@ -1,5 +1,6 @@
 import { useState } from "react";
-import "./Home.css"; // Import your CSS file for styling\
+import { Link } from 'react-router-dom';
+import "./Home.css";
 
 import heroImage from "./assets/home.png";
 import zoraLogo from "./assets/logo.png";
@@ -10,25 +11,29 @@ function Home() {
       title: 'Custom 3D Design',
       description: 'We create custom 3D models tailored to your specific requirements and bring your ideas to life.',
       icon: '🎨',
-      details: 'Expert designers work with you to create precise, innovative 3D models for any application.'
+      details: 'Expert designers work with you to create precise, innovative 3D models for any application.',
+      link: '/services/custom-design'
     },
     {
       title: 'Rapid Prototyping',
       description: 'Fast and efficient prototyping services to test your concepts quickly before full production.',
       icon: '⚡',
-      details: 'Get your prototypes in days, not weeks. Perfect for product development and design validation.'
+      details: 'Get your prototypes in days, not weeks. Perfect for product development and design validation.',
+      link: '/services/rapid-prototyping'
     },
     {
       title: 'Production Printing',
       description: 'High-volume 3D printing for manufacturing needs with industrial-grade quality and consistency.',
       icon: '🏭',
-      details: 'Scale your production with our advanced printing capabilities and quality assurance processes.'
+      details: 'Scale your production with our advanced printing capabilities and quality assurance processes.',
+      link: '/services/production-printing'
     },
     {
       title: 'Consultation Services',
       description: 'Expert advice on 3D printing technologies, materials selection, and project optimization.',
       icon: '💡',
-      details: 'Get professional guidance to choose the best approach and materials for your specific project needs.'
+      details: 'Get professional guidance to choose the best approach and materials for your specific project needs.',
+      link: '/services/consultation'
     }
   ];
 
@@ -45,7 +50,7 @@ function Home() {
           <p className="hero-description">
             ALL 3D Printing needs in one place
           </p>
-          <button className="cta-button">Get Free Consultation</button>
+          <Link to="/contact" className="cta-button">Get Free Consultation</Link>
         </div>
         
         {/* Scroll indicator */}
@@ -67,7 +72,9 @@ function Home() {
                 <p className="service-description">{service.description}</p>
                 <div className="service-overlay">
                   <p className="service-details">{service.details}</p>
-                  <button className="service-button">More Details</button>
+                  <Link to={service.link} className="service-button">
+                    More Details
+                  </Link>
                 </div>
               </div>
             ))}
