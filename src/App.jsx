@@ -7,7 +7,7 @@ import Contact from "./Contact";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/zora360">
       <div className="app">
         <Header />
         
@@ -23,10 +23,10 @@ function App() {
         <footer className="footer">
           <p>&copy; 2025 Zora360. All rights reserved.</p>
           <p>
-            Follow us on <a href="https://facebook.com">FaceBook</a> |{" "}
-            <a href="https://instagram.com">Instagram</a> |{" "}
-            <a href="https://tiktok.com">TikTok</a> |{" "}
-            <a href="https://youtube.com">Youtube</a>
+            Follow us on <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">FaceBook</a> |{" "}
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a> |{" "}
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">TikTok</a> |{" "}
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">Youtube</a>
           </p>
         </footer>
       </div>
