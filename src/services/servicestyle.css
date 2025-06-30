@@ -216,3 +216,46 @@
     display: block;
   }
 }
+
+@media (max-width: 430px){
+  .process-steps,
+  .tech-grid,
+  .capabilities-grid,
+  .consultation-areas {
+    grid-template-columns: 1fr;
+  }
+
+  .custom-design-top-space{
+  padding-top: 2350px;
+  }
+
+.rapidpro-top-space{
+  padding-top: 2350px;
+  }
+
+.productprint-top-space{
+  padding-top: 2350px;
+  }
+
+  
+  .timeline {
+    flex-direction: column;
+  }
+  
+  .service-cta {
+    padding: 30px 20px;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .back-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    margin-left: 0;
+    margin-top: 15px;
+    display: block;
+  }
+}
