@@ -3,7 +3,8 @@ import "./servicestyle.css";
 
 function CustomDesign() {
   return (
-    <div className="page-container service-detail-page">
+    <div className="custom-design-top-space">
+      <div className="page-container service-detail-page">
       <div className="page-content">
         <div className="service-detail-header">
           <div className="service-detail-icon">🎨</div>
@@ -116,6 +117,7 @@ function CustomDesign() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

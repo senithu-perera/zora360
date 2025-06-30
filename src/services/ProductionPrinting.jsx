@@ -3,7 +3,8 @@ import "./servicestyle.css";
 
 function ProductionPrinting() {
   return (
-    <div className="page-container service-detail-page">
+    <div className="productprint-top-space">
+      <div className="page-container service-detail-page">
       <div className="page-content">
         <div className="service-detail-header">
           <div className="service-detail-icon">🏭</div>
@@ -112,6 +113,7 @@ function ProductionPrinting() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

@@ -4,6 +4,18 @@
   min-height: 100vh;
 }
 
+.custom-design-top-space{
+  padding-top: 1650px;
+}
+
+.rapidpro-top-space{
+  padding-top: 1500px;
+}
+
+.productprint-top-space{
+  padding-top: 1300px;
+}
+
 .service-detail-header {
   text-align: center;
   margin-bottom: 50px;
